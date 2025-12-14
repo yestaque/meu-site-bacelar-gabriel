@@ -1,0 +1,159 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Hero com leve gradiente */
+.hero-section {
+  background: radial-gradient(circle at top left, #e6f4ff 0, #ffffff 50%);
+}
+
+/* Banner azul */
+.banner-zona-norte {
+  background: #0d6efd10;
+  border: 1px solid #0d6efd30;
+  border-radius: 1rem;
+}
+
+/* Botão flutuante WhatsApp */
+.btn-whats-fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #25d366;
+  color: #fff;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  z-index: 900;
+}
+
+/* FOOTER */
+.footer-bacelar {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.footer-bacelar a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.footer-bacelar a:hover {
+  color: #ffffff;
+}
+
+/* 🔹 MODO ESCURO */
+body.dark-mode {
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+body.dark-mode .navbar {
+  background-color: #020617 !important;
+  border-bottom: 1px solid #1f2937;
+}
+
+body.dark-mode .navbar .nav-link {
+  color: #e5e7eb !important;
+}
+
+body.dark-mode .navbar .nav-link:hover {
+  color: #38bdf8 !important;
+}
+
+body.dark-mode .hero-section {
+  background: radial-gradient(circle at top left, #0f172a 0, #020617 60%);
+}
+
+body.dark-mode .card {
+  background-color: #020617;
+  border-color: #1f2937 !important;
+  color: #e5e7eb;
+}
+
+body.dark-mode .bg-light {
+  background-color: #020617 !important;
+}
+
+body.dark-mode .footer-bacelar {
+  background-color: #020617;
+}
+
+body.dark-mode .btn-outline-secondary {
+  color: #e5e7eb;
+  border-color: #4b5563;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+  background-color: #e5e7eb;
+  color: #020617;
+}
+
+/* 🔹 CHATBOT */
+.chatbot-box {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  width: 280px;
+  background: #111827;
+  color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  font-size: 0.85rem;
+  display: none;
+  z-index: 950;
+}
+
+.chatbot-box.chatbot-open {
+  display: block;
+}
+
+.chatbot-header {
+  background: #0f172a;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f9fafb;
+}
+
+.chatbot-body {
+  padding: 10px;
+}
+
+/* Botão para abrir o chatbot */
+.chatbot-open-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  z-index: 940;
+}
+
+.chatbot-open-btn:hover {
+  filter: brightness(1.05);
+}
+
+/* Dark mode no chatbot */
+body.dark-mode .chatbot-box {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+body.dark-mode .chatbot-header {
+  background: #030712;
+}

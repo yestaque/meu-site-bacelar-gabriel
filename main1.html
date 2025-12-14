@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles4.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <title>Bacelar Incorporações Empreendimentos</title>
+
+  <!-- CSS próprio -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#inicio">
+          <img
+            src="img/ChatGPT Image 3 de dez. de 2025, 00_04_42.png"
+            alt="Logo Bacelar"
+            width="44"
+            height="44"
+            class="me-2 rounded-circle"
+          />
+          <span class="fw-bold">Bacelar Incorporações</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Alternar navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#empreendimentos">Empreendimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#depoimentos">Depoimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#utilidades">Utilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#noticias">Notícias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+
+            <!-- Botão modo escuro -->
+            <li class="nav-item ms-lg-3">
+              <button id="btn-dark-mode" class="btn btn-outline-secondary btn-sm">
+                🌙 Modo escuro
+              </button>
+            </li>
+
+            <li class="nav-item ms-lg-3">
+              <a
+                href="https://wa.me/5584992160269"
+                target="_blank"
+                class="btn btn-success px-3"
+              >
+                WhatsApp
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="inicio" class="pt-5">
+    <!-- HERO -->
+    <section class="hero-section py-5">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6">
+            <span class="badge bg-success mb-3">
+              Casas na Zona Norte de Natal / Extremoz
+            </span>
+            <h1 class="display-5 fw-bold mb-3">
+              CONHEÇA NOSSOS IMÓVEIS
+            </h1>
+            <p class="lead mb-4">
+              Casas em conjuntos planejados e unidades individuais em
+              Extremoz/RN, pensadas para o conforto da sua família,
+              ventilação natural e valorização do investimento.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a
+                href="https://wa.me/5584992160269"
+                target="_blank"
+                class="btn btn-primary btn-lg"
+              >
+                Simular financiamento
+              </a>
+              <a href="#empreendimentos" class="btn btn-outline-secondary btn-lg">
+                Ver empreendimentos
+              </a>
+            </div>
+            <p class="mt-3 small text-muted">
+              Atendimento personalizado para financiamento pela Caixa e Minha Casa Minha Vida.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+                  <video autoplay muted playsinline loop controls>
+                    <source src="img/WhatsApp Video 2025-11-25 at 20.53.51 (1).mp4" type="video/mp4" />
+                    Seu navegador não suporta vídeos.
+                  </video>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+                  <video autoplay muted playsinline loop controls>
+                    <source src="img/WhatsApp Video 2025-11-25 at 20.56.08.mp4" type="video/mp4" />
+                    Seu navegador não suporta vídeos.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <p class="mt-2 text-center text-muted">
+              Veja vídeos das casas já entregues e em construção.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="h3 fw-bold mb-3">Sobre a Bacelar Incorporações</h2>
+            <p>
+              A Bacelar Incorporações surgiu para oferecer
+              <strong>conforto, modernidade e tranquilidade</strong>
+              para famílias da Zona Norte de Natal e de Extremoz.
+            </p>
+            <p>
+              Com projetos em andamento e empreendimentos entregues,
+              buscamos crescer a cada ano com modelos de casas ideais
+              para você e seus filhos.
+            </p>
+            <ul class="list-unstyled mt-3">
+              <li>• Casas projetadas para vento e sol de Natal</li>
+              <li>• Plantas modernas com possibilidade de ampliação</li>
+              <li>• Opções prontas para morar ou construir</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <h3 class="h5 fw-bold mb-3">Invista no seu futuro</h3>
+                <p>
+                  Empreendimentos imobiliários em Extremoz/RN,
+                  com excelente potencial de valorização e facilidades
+                  de financiamento.
+                </p>
+                <p class="mb-3">
+                  <strong>“Tenha um Bacelar Empreendimento e invista no seu futuro.”</strong>
+                </p>
+                <a
+                  href="auth.html"
+                  class="btn btn-outline-primary me-2 mb-2"
+                >
+                  Registrar-se
+                </a>
+                <a
+                  href="login.html"
+                  class="btn btn-outline-secondary mb-2"
+                >
+                  Entrar
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMPREENDIMENTOS -->
+    <section id="empreendimentos" class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h2 class="h3 fw-bold mb-1">Empreendimentos Bacelar</h2>
+            <p class="mb-0 text-muted">
+              Casas entregues, em obras e prontas para construir na Zona Norte de Natal e Extremoz.
+            </p>
+          </div>
+          <div class="d-none d-md-flex gap-2">
+            <a href="main.html" class="btn btn-sm btn-outline-secondary">Entregues</a>
+            <a href="fotoscontruindo.html" class="btn btn-sm btn-outline-secondary">Em obras</a>
+            <a href="fotoscontruindo.html" class="btn btn-sm btn-outline-secondary">Prontos para construir</a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Casa entregue 1 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="position-relative">
+                <img src="img/casaentregue.jpeg" class="card-img-top" alt="Casa entregue Zona Norte" />
+                <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                  Entregue
+                </span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Casa 2 quartos</h5>
+                <p class="card-text small text-muted mb-2">
+                  Zona Norte de Natal • Quintal • Garagem
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Casa entregue 2 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="position-relative">
+                <img src="img/casaentregue1.jpeg" class="card-img-top" alt="Casa entregue Zona Norte" />
+                <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                  Entregue
+                </span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Casa 3 quartos</h5>
+                <p class="card-text small text-muted mb-2">
+                  Localização estratégica na Zona Norte.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Casa entregue 3 -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="position-relative">
+                <img src="img/casaentregue2.jpeg" class="card-img-top" alt="Casa entregue Zona Norte" />
+                <span class="badge bg-success position-absolute top-0 start-0 m-2">
+                  Entregue
+                </span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Casa com área para expansão</h5>
+                <p class="card-text small text-muted mb-2">
+                  Ideal para quem quer ampliar no futuro.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Casa finalizada destaque -->
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="position-relative">
+                <img src="img/finalizado.jpeg" class="card-img-top" alt="Casa finalizada" />
+                <span class="badge bg-primary position-absolute top-0 start-0 m-2">
+                  Destaque
+                </span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Casa pronta para morar</h5>
+                <p class="card-text small text-muted mb-3">
+                  Seja o seu primeiro lar ou um novo investimento,
+                  temos o empreendimento ideal para você.
+                </p>
+                <a
+                  href="https://wa.me/5584992160269"
+                  target="_blank"
+                  class="btn btn-outline-primary btn-sm"
+                >
+                  Agendar visita
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="mt-5 p-4 rounded-4 banner-zona-norte">
+          <h3 class="h4 mb-2">Sua casa própria na Zona Norte começa aqui.</h3>
+          <p class="mb-0">
+            Você pode negociar o pagamento via Caixa Econômica Federal ou
+            pelo programa Minha Casa Minha Vida. Fale conosco e simule.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="h3 fw-bold mb-4 text-center">O que nossos clientes dizem</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <p class="mb-3">
+                  "Comprei minha casa com a Bacelar e foi tudo muito rápido e
+                  confiável."
+                </p>
+                <h4 class="h6 mb-0">João Silva</h4>
+                <small class="text-muted">Comprador - Zona Norte de Natal</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <p class="mb-3">
+                  "Equipe super atenciosa, explicaram todo o processo de
+                  financiamento. Recomendo!"
+                </p>
+                <h4 class="h6 mb-0">Maria Fernandes</h4>
+                <small class="text-muted">Família em Extremoz/RN</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 UTILIDADES: RELÓGIO + CALCULADORA + MCMV -->
+    <section id="utilidades" class="py-5">
+      <div class="container">
+        <h2 class="h3 fw-bold mb-4 text-center">Utilidades Bacelar</h2>
+        <div class="row g-4">
+          <!-- Relógio -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body text-center">
+                <h3 class="h5 fw-bold mb-3">Horário atual</h3>
+                <p class="text-muted mb-2">Horário local do seu dispositivo:</p>
+                <div
+                  id="relogio"
+                  class="display-4 fw-bold"
+                  style="font-family: 'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;"
+                >
+                  --:--:--
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Calculadora -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h3 class="h5 fw-bold mb-3 text-center">Calculadora rápida</h3>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    id="calc-display"
+                    class="form-control form-control-lg text-end"
+                    placeholder="0"
+                    readonly
+                  />
+                </div>
+                <div class="calc-buttons">
+                  <div class="row g-2 mb-2">
+                    <div class="col-3"><button class="btn w-100 btn-light calc-btn" data-value="7">7</button></div>
+                    <div class="col-3"><button class="btn w-100 btn-light calc-btn" data-value="8">8</button></div>
+                    <div class="col-3"><button class="btn w-100 btn-light calc-btn" data-value="9">9</button></div>
+                    <div class="col-3"><button class="btn w-100 btn-warning calc-btn" data-value="/">÷</button></div>
+                  </div>
+                  <div class="row g-2 mb-2">
+                    <div class="col-3"><button class="btn w-100 btn-light calc-btn" data-value="4">4</button></div>
+                    <div class="col-3"><button class="btn w-100 btn-light calc-btn" data-value="5">5</button></div>
+                    <div class="col-3"><button class="btn w-100 btn-light calc-btn" data-value="6">6</button></div>
+                    <div class="col-3"><button class="btn w-100 btn-warning calc-btn" data-value="*">×</button></div>
+                  </div>
+                  <div class="row g-2 mb-2">
+                    <div class="col-3"><button class="btn w-100 btn-light calc-btn" data-value="1">1</button></div>
+                    <div class="col-3"><button class="btn w-100 btn-light calc-btn" data-value="2">2</button></div>
+                    <div class="col-3"><button class="btn w-100 btn-light calc-btn" data-value="3">3</button></div>
+                    <div class="col-3"><button class="btn w-100 btn-warning calc-btn" data-value="-">-</button></div>
+                  </div>
+                  <div class="row g-2">
+                    <div class="col-3"><button class="btn w-100 btn-light calc-btn" data-value="0">0</button></div>
+                    <div class="col-3"><button class="btn w-100 btn-light calc-btn" data-value=".">.</button></div>
+                    <div class="col-3">
+                      <button class="btn w-100 btn-danger" id="calc-clear">C</button>
+                    </div>
+                    <div class="col-3">
+                      <button class="btn w-100 btn-success" id="calc-equal">=</button>
+                    </div>
+                  </div>
+                  <p class="small text-muted mt-3">
+                    Use a calculadora para simular valores aproximados de entrada,
+                    parcelas ou investimentos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Simulador Minha Casa Minha Vida -->
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h3 class="h5 fw-bold mb-3 text-center">Minha Casa Minha Vida</h3>
+                <p class="small text-muted">
+                  Simulação aproximada para entender em qual faixa você pode se enquadrar.
+                </p>
+                <div class="mb-3">
+                  <label for="mcmv-renda" class="form-label">Renda familiar mensal (R$)</label>
+                  <input
+                    type="number"
+                    id="mcmv-renda"
+                    class="form-control"
+                    placeholder="Ex.: 3500"
+                    min="0"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="mcmv-cidade" class="form-label">Cidade</label>
+                  <select id="mcmv-cidade" class="form-select">
+                    <option value="natal">Natal / Extremoz - RN</option>
+                    <option value="outra">Outra cidade</option>
+                  </select>
+                </div>
+                <button id="mcmv-simular" class="btn btn-primary w-100 mb-3">
+                  Simular faixa
+                </button>
+                <div id="mcmv-resultado" class="small text-muted">
+                  Informe sua renda para ver o resultado.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 NOTÍCIAS DO SETOR IMOBILIÁRIO -->
+    <section id="noticias" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="h3 fw-bold mb-4 text-center">Notícias do mercado imobiliário</h2>
+        <p class="text-center text-muted mb-4">
+          Acompanhe algumas informações importantes sobre juros, programas habitacionais
+          e tendências do mercado.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <span class="badge bg-primary mb-2">Financiamento</span>
+                <h3 class="h5">Programas habitacionais para baixa renda</h3>
+                <p class="small text-muted mb-3">
+                  Entenda como o Minha Casa Minha Vida pode ajudar famílias com renda
+                  de até R$ 8 mil na compra da casa própria.
+                </p>
+                <p class="small mb-0">
+                  Procure sempre um correspondente Caixa autorizado para simular
+                  as condições reais do seu financiamento.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <span class="badge bg-success mb-2">Juros</span>
+                <h3 class="h5">Importância da taxa de juros na parcela</h3>
+                <p class="small text-muted mb-3">
+                  Pequenas variações na taxa de juros podem alterar bastante o valor
+                  final das parcelas ao longo dos anos.
+                </p>
+                <p class="small mb-0">
+                  Sempre compare diferentes linhas de crédito e prazos antes de
+                  assinar o contrato.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <span class="badge bg-warning text-dark mb-2">Dica Bacelar</span>
+                <h3 class="h5">Documentos para análise de crédito</h3>
+                <p class="small text-muted mb-3">
+                  RG, CPF, comprovante de residência, comprovante de renda e
+                  extratos bancários atualizados costumam ser solicitados.
+                </p>
+                <p class="small mb-0">
+                  Organizar a documentação com antecedência agiliza o processo de compra.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <h2 class="h3 fw-bold mb-3">Fale com a Bacelar</h2>
+            <p>
+              Preencha os dados abaixo e nossa equipe entrará em contato
+              para tirar dúvidas, simular financiamento ou agendar uma visita.
+            </p>
+            <p class="mb-1">
+              Telefone / WhatsApp: <strong>(84) 99216-0269</strong>
+            </p>
+            <p class="mb-4">
+              E-mail: <strong>gabrielbacelar1000@gmail.com</strong>
+            </p>
+
+            <a
+              href="https://wa.me/5584992160269"
+              target="_blank"
+              class="btn btn-success me-2 mb-2"
+            >
+              Falar no WhatsApp
+            </a>
+            <a
+              href="instagram.com/gabrielfreire422/"
+              target="_blank"
+              class="btn btn-outline-dark mb-2"
+            >
+              Instagram
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 fw-bold mb-3">Formulário de interesse</h3>
+                <form action="/clientes" method="POST">
+                  <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input
+                      type="text"
+                      id="nome"
+                      name="nome"
+                      class="form-control"
+                      placeholder="Seu nome completo"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="seuemail@exemplo.com"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone / WhatsApp</label>
+                    <input
+                      type="text"
+                      id="telefone"
+                      name="telefone"
+                      class="form-control"
+                      placeholder="(84) 9 9999-9999"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea
+                      id="mensagem"
+                      name="mensagem"
+                      class="form-control"
+                      rows="3"
+                      placeholder="Conte rapidamente o que você procura..."
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Enviar interesse
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BOTÃO WHATSAPP FLUTUANTE -->
+  <a href="https://wa.me/5584992160269" class="btn-whats-fixed" target="_blank" aria-label="Fale no WhatsApp">
+    💬
+  </a>
+
+  <!-- 🔹 CHATBOT SIMPLES (CANTO DIREITO INFERIOR) -->
+  <div class="chatbot-box" id="chatbot-box">
+    <div class="chatbot-header">
+      <span>Atendimento Bacelar</span>
+      <button id="chatbot-toggle" class="btn-close btn-close-white btn-sm"></button>
+    </div>
+    <div class="chatbot-body">
+      <p class="small mb-2">Como podemos te ajudar hoje?</p>
+      <select id="chatbot-opcao" class="form-select form-select-sm mb-2">
+        <option value="financiamento">Quero simular um financiamento</option>
+        <option value="disponiveis">Quero ver casas disponíveis</option>
+        <option value="visita">Quero agendar uma visita</option>
+        <option value="duvidas">Tenho dúvidas sobre documentação</option>
+      </select>
+      <textarea
+        id="chatbot-texto"
+        class="form-control form-control-sm mb-2"
+        rows="3"
+      ></textarea>
+      <button id="chatbot-whats" class="btn btn-success btn-sm w-100">
+        Enviar no WhatsApp
+      </button>
+      <p class="small text-muted mt-2 mb-0">
+        Um clique e a mensagem já abre pronta no seu WhatsApp.
+      </p>
+    </div>
+  </div>
+
+  <!-- MINI BOTÃO PARA ABRIR CHATBOT -->
+  <button id="chatbot-open-btn" class="chatbot-open-btn">
+    💬 Ajuda
+  </button>
+
+  <section id="estatisticas" class="py-5">
+  <div class="container">
+    <h2 class="h3 fw-bold mb-4 text-center">
+      Estatísticas: por que comprar na Zona Norte / Extremoz-RN
+    </h2>
+    <p class="text-center text-muted mb-5">
+      A Zona Norte de Natal e o município de Extremoz combinam preço acessível,
+      potencial de valorização e qualidade de vida para quem busca o primeiro imóvel
+      ou um investimento sólido.
+    </p>
+
+    <div class="row g-4">
+      <!-- Gráfico 1: Preço médio m² -->
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h3 class="h6 fw-bold text-center mb-3">
+              Preço médio do m² (R$/m²)
+            </h3>
+            <canvas id="graficoPrecoM2"></canvas>
+            <p class="small text-muted mt-3">
+              Valores ilustrativos: a Zona Norte / Extremoz tende a ter m² mais acessível
+              em comparação com outras regiões de Natal, permitindo casas maiores pelo
+              mesmo orçamento.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gráfico 2: Valorização -->
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h3 class="h6 fw-bold text-center mb-3">
+              Valorização média nos últimos 5 anos (%)
+            </h3>
+            <canvas id="graficoValorizacao"></canvas>
+            <p class="small text-muted mt-3">
+              A Zona Norte / Extremoz vem apresentando valorização consistente,
+              acompanhando a expansão urbana e melhorias de infraestrutura.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gráfico 3: Motivos para comprar -->
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h3 class="h6 fw-bold text-center mb-3">
+              Principais motivos para comprar na Zona Norte
+            </h3>
+            <canvas id="graficoMotivos"></canvas>
+            <p class="small text-muted mt-3">
+              Preço acessível, potencial de valorização, proximidade de praias e uma
+              infraestrutura em crescimento fazem da região uma oportunidade estratégica.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer-bacelar mt-5">
+    <div class="container py-4">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <div class="d-flex align-items-center mb-2">
+            <img
+              src="img/ChatGPT Image 3 de dez. de 2025, 00_04_42.png"
+              alt="Bacelar Incorporações"
+              width="40"
+              height="40"
+              class="me-2 rounded-circle"
+            />
+            <span class="fw-bold">Bacelar Incorporações</span>
+          </div>
+          <p class="small mb-0">
+            Empreendimentos residenciais na Zona Norte de Natal e Extremoz,
+            com foco em conforto, ventilação e valorização do imóvel.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="h6 fw-bold mb-2">Links rápidos</h4>
+          <ul class="list-unstyled small mb-0">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#empreendimentos">Empreendimentos</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#utilidades">Utilidades</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="h6 fw-bold mb-2">Contato</h4>
+          <p class="small mb-1">
+            Telefone / WhatsApp:<br />
+            <strong>(84) 99216-0269</strong>
+          </p>
+          <p class="small mb-3">
+            E-mail:<br />
+            <strong>gabrielbacelar1000@gmail.com</strong>
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/5584992160269"
+              target="_blank"
+              class="btn btn-sm btn-success"
+            >
+              WhatsApp
+            </a>
+            <a
+              href="https://instagram.com/seu_perfil"
+              target="_blank"
+              class="btn btn-sm btn-outline-light"
+            >
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-top mt-4 pt-3 d-flex justify-content-between small flex-wrap gap-2">
+        <span>
+          © <span id="ano-footer"></span> Bacelar Incorporações Empreendimentos. Todos os direitos reservados.
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- JS próprio -->
+  <script>
+    // Atualiza o ano do rodapé
+    document.getElementById("ano-footer").textContent = new Date().getFullYear();
+
+    // Scroll suave para links internos
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener("click", function (e) {
+        const targetId = this.getAttribute("href");
+        if (targetId.length > 1) {
+          e.preventDefault();
+          const target = document.querySelector(targetId);
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        }
+      });
+    });
+
+    // 🔹 RELÓGIO
+    function atualizarRelogio() {
+      const relogio = document.getElementById("relogio");
+      if (!relogio) return;
+      const agora = new Date();
+      const hh = String(agora.getHours()).padStart(2, "0");
+      const mm = String(agora.getMinutes()).padStart(2, "0");
+      const ss = String(agora.getSeconds()).padStart(2, "0");
+      relogio.textContent = `${hh}:${mm}:${ss}`;
+    }
+    atualizarRelogio();
+    setInterval(atualizarRelogio, 1000);
+
+    // 🔹 CALCULADORA
+    const display = document.getElementById("calc-display");
+    const btns = document.querySelectorAll(".calc-btn");
+    const btnClear = document.getElementById("calc-clear");
+    const btnEqual = document.getElementById("calc-equal");
+
+    if (display && btns && btnClear && btnEqual) {
+      btns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const value = btn.getAttribute("data-value");
+          if (display.value === "0" && value !== "." && !["+", "-", "*", "/"].includes(value)) {
+            display.value = value;
+          } else {
+            display.value += value;
+          }
+        });
+      });
+
+      btnClear.addEventListener("click", () => {
+        display.value = "";
+      });
+
+      btnEqual.addEventListener("click", () => {
+        try {
+          const result = eval(display.value || "0");
+          display.value = result;
+        } catch (e) {
+          display.value = "Erro";
+          setTimeout(() => (display.value = ""), 1000);
+        }
+      });
+    }
+
+    // 🔹 SIMULADOR MINHA CASA MINHA VIDA (aproximado)
+    const mcmvBtn = document.getElementById("mcmv-simular");
+    const mcmvRenda = document.getElementById("mcmv-renda");
+    const mcmvCidade = document.getElementById("mcmv-cidade");
+    const mcmvResultado = document.getElementById("mcmv-resultado");
+
+    if (mcmvBtn && mcmvRenda && mcmvCidade && mcmvResultado) {
+      mcmvBtn.addEventListener("click", () => {
+        const renda = parseFloat(mcmvRenda.value.replace(",", "."));
+        if (isNaN(renda) || renda <= 0) {
+          mcmvResultado.innerHTML = '<span class="text-danger">Informe uma renda válida.</span>';
+          return;
+        }
+
+        let faixa = "";
+        let subsidio = "";
+        let limite = "";
+
+        if (renda <= 2640) {
+          faixa = "Faixa 1 (aprox.)";
+          subsidio = "até ~R$ 55.000,00";
+          limite = "imóveis até ~R$ 190.000,00";
+        } else if (renda <= 4000) {
+          faixa = "Faixa 2 (aprox.)";
+          subsidio = "até ~R$ 29.000,00";
+          limite = "imóveis até ~R$ 240.000,00";
+        } else if (renda <= 8000) {
+          faixa = "Faixa 3 (aprox.)";
+          subsidio = "subsídio reduzido ou inexistente";
+          limite = "imóveis até ~R$ 350.000,00";
+        } else {
+          faixa = "Acima das faixas principais do programa";
+          subsidio = "sem subsídio";
+          limite = "linha de crédito normal de mercado";
+        }
+
+        const parcelaMax = renda * 0.25;
+
+        mcmvResultado.innerHTML = `
+          <strong>Renda informada:</strong> R$ ${renda.toFixed(2)}<br>
+          <strong>Faixa estimada:</strong> ${faixa}<br>
+          <strong>Subsídio aproximado:</strong> ${subsidio}<br>
+          <strong>Valor de imóvel sugerido:</strong> ${limite}<br>
+          <strong>Parcela máxima sugerida (25% da renda):</strong> R$ ${parcelaMax.toFixed(2)}<br>
+          <span class="text-muted small">
+            *Valores apenas para simulação aproximada. Consulte sempre a Caixa ou correspondente autorizado
+            para condições oficiais do programa.
+          </span>
+        `;
+      });
+    }
+
+    // 🔹 MODO ESCURO
+    const btnDark = document.getElementById("btn-dark-mode");
+    const body = document.body;
+
+    function aplicarTemaInicial() {
+      const temaSalvo = localStorage.getItem("tema-bacelar");
+      if (temaSalvo === "dark") {
+        body.classList.add("dark-mode");
+        if (btnDark) btnDark.textContent = "☀️ Modo claro";
+      }
+    }
+
+    aplicarTemaInicial();
+
+    if (btnDark) {
+      btnDark.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        const darkAtivo = body.classList.contains("dark-mode");
+        localStorage.setItem("tema-bacelar", darkAtivo ? "dark" : "light");
+        btnDark.textContent = darkAtivo ? "☀️ Modo claro" : "🌙 Modo escuro";
+      });
+    }
+
+    // 🔹 CHATBOT SIMPLES (WhatsApp)
+    const chatbotBox = document.getElementById("chatbot-box");
+    const chatbotOpenBtn = document.getElementById("chatbot-open-btn");
+    const chatbotToggle = document.getElementById("chatbot-toggle");
+    const chatbotOpcao = document.getElementById("chatbot-opcao");
+    const chatbotTexto = document.getElementById("chatbot-texto");
+    const chatbotWhats = document.getElementById("chatbot-whats");
+
+    function atualizarTextoChatbot() {
+      let base = "";
+      switch (chatbotOpcao.value) {
+        case "financiamento":
+          base = "Olá, gostaria de simular um financiamento para uma casa da Bacelar.";
+          break;
+        case "disponiveis":
+          base = "Olá, gostaria de ver as casas disponíveis atualmente.";
+          break;
+        case "visita":
+          base = "Olá, quero agendar uma visita para conhecer um imóvel.";
+          break;
+        case "duvidas":
+          base = "Olá, tenho dúvidas sobre a documentação necessária para financiamento.";
+          break;
+      }
+      chatbotTexto.value = base;
+    }
+
+    if (chatbotOpcao && chatbotTexto) {
+      atualizarTextoChatbot();
+      chatbotOpcao.addEventListener("change", atualizarTextoChatbot);
+    }
+
+    if (chatbotWhats) {
+      chatbotWhats.addEventListener("click", () => {
+        const texto = chatbotTexto.value || "Olá, gostaria de mais informações sobre os imóveis Bacelar.";
+        const mensagem = encodeURIComponent(texto);
+        const telefone = "5584992160269";
+        const url = `https://wa.me/${telefone}?text=${mensagem}`;
+        window.open(url, "_blank");
+      });
+    }
+
+    if (chatbotOpenBtn && chatbotBox && chatbotToggle) {
+      chatbotOpenBtn.addEventListener("click", () => {
+        chatbotBox.classList.add("chatbot-open");
+        chatbotOpenBtn.style.display = "none";
+      });
+
+      chatbotToggle.addEventListener("click", () => {
+        chatbotBox.classList.remove("chatbot-open");
+        chatbotOpenBtn.style.display = "block";
+      });
+    }
+  </script>
+
+<script>
+  // ========= GRÁFICO 1: PREÇO MÉDIO m² =========
+  const ctxPreco = document.getElementById('graficoPrecoM2');
+  if (ctxPreco) {
+    new Chart(ctxPreco, {
+      type: 'bar',
+      data: {
+        labels: ['Zona Norte / Extremoz', 'Zona Sul', 'Zona Leste', 'Zona Oeste'],
+        datasets: [{
+          label: 'R$/m² (valores ilustrativos)',
+          data: [2800, 5200, 4500, 3500], // ajuste como quiser
+          backgroundColor: [
+            'rgba(37, 99, 235, 0.8)',  // Zona Norte / Extremoz (destaque)
+            'rgba(148, 163, 184, 0.8)',
+            'rgba(148, 163, 184, 0.8)',
+            'rgba(148, 163, 184, 0.8)'
+          ],
+          borderRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => ` R$ ${ctx.parsed.y.toLocaleString('pt-BR')}/m²`
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              callback: (val) => `R$ ${val.toLocaleString('pt-BR')}`
+            }
+          }
+        }
+      }
+    });
+  }
+
+  // ========= GRÁFICO 2: VALORIZAÇÃO =========
+  const ctxVal = document.getElementById('graficoValorizacao');
+  if (ctxVal) {
+    new Chart(ctxVal, {
+      type: 'line',
+      data: {
+        labels: ['2020', '2021', '2022', '2023', '2024'],
+        datasets: [
+          {
+            label: 'Zona Norte / Extremoz',
+            data: [4, 5, 7, 8, 9], // % ao ano (ilustrativo)
+            borderColor: 'rgba(37, 99, 235, 1)',
+            backgroundColor: 'rgba(37, 99, 235, 0.2)',
+            tension: 0.3,
+            fill: true
+          },
+          {
+            label: 'Média Natal',
+            data: [3, 4, 5, 6, 6.5], // ilustrativo
+            borderColor: 'rgba(148, 163, 184, 1)',
+            backgroundColor: 'rgba(148, 163, 184, 0.15)',
+            tension: 0.3,
+            fill: true
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y}%`
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              callback: (val) => `${val}%`
+            }
+          }
+        }
+      }
+    });
+  }
+
+  // ========= GRÁFICO 3: MOTIVOS PARA COMPRAR =========
+  const ctxMotivos = document.getElementById('graficoMotivos');
+  if (ctxMotivos) {
+    new Chart(ctxMotivos, {
+      type: 'pie',
+      data: {
+        labels: [
+          'Preço mais acessível',
+          'Potencial de valorização',
+          'Proximidade de praias e lazer',
+          'Infraestrutura em crescimento',
+          'Qualidade de vida / bairro tranquilo'
+        ],
+        datasets: [{
+          data: [30, 25, 20, 15, 10], // % ilustrativos
+          backgroundColor: [
+            'rgba(37, 99, 235, 0.9)',
+            'rgba(22, 163, 74, 0.9)',
+            'rgba(234, 179, 8, 0.9)',
+            'rgba(239, 68, 68, 0.9)',
+            'rgba(99, 102, 241, 0.9)'
+          ]
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              boxWidth: 12
+            }
+          },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => {
+                const label = ctx.label || '';
+                const value = ctx.parsed;
+                return ` ${label}: ${value}%`;
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+</script>
+
+
+</body>
+</html>

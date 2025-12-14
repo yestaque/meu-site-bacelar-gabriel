@@ -1,0 +1,14 @@
+h1{
+    background-color: rgb(0, 102, 255);
+    font-size: 8px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.foto{
+    height: 300px;
+    width: 300px;
+}

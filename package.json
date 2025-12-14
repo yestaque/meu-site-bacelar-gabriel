@@ -1,0 +1,12 @@
+{
+  "name": "bacelar-crud",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.8",
+    "express": "^4.22.1",
+    "sqlite3": "^5.1.6"
+  }
+}

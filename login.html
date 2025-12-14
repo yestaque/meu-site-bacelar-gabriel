@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #ffffff;
+      width: 100%;
+      max-width: 420px;
+      padding: 24px 28px 32px;
+      border-radius: 10px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .field {
+      margin-bottom: 14px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 0 1px rgba(0,123,255,0.25);
+    }
+
+    .btn-primary {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      font-size: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      background: #007bff;
+      color: #fff;
+    }
+
+    .link {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .link a {
+      color: #007bff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .link a:hover {
+      text-decoration: underline;
+    }
+
+    .message {
+      margin-top: 10px;
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      display: none;
+    }
+
+    .message.error {
+      background-color: #ffecec;
+      border: 1px solid #ff6b6b;
+      color: #993333;
+    }
+
+    .message.success {
+      background-color: #e6ffed;
+      border: 1px solid #3abf70;
+      color: #206142;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <form id="form-login" method="POST" action="/login">
+      <h2>Entrar</h2>
+
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+      </div>
+
+      <div class="field">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="********">
+      </div>
+
+      <button type="submit" class="btn-primary">Entrar</button>
+
+      <div class="link">
+        <a href="auth.html">Criar uma conta</a>
+      </div>
+
+      <div class="link">
+        <a href="accounts/password_reset.html">Esqueceu a senha?</a>
+      </div>
+
+      <div id="msg-login" class="message error"></div>
+    </form>
+  </div>
+
+<script>
+  const formLogin = document.getElementById("form-login");
+  const msgLogin  = document.getElementById("msg-login");
+
+  formLogin.addEventListener("submit", function(event) {
+    // DESCOMENTAR se quiser apenas simular e evitar o erro 405
+    // event.preventDefault();
+
+    msgLogin.classList.remove("success");
+    msgLogin.classList.add("error");
+    msgLogin.textContent = "Verificando credenciais...";
+    msgLogin.style.display = "block";
+  });
+</script>
+
+</body>
+</html>
