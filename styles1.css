@@ -1,57 +1,102 @@
-.telefone {
-    height: 30px;
-    width: 30px;
-    color: orange;
-}
-
-.email {
-    height: 30px;
-    width: 30px;
-    color: orange;
-}
-
+/* Ícones de Contato */
+.telefone,
+.email,
 .endereco {
     height: 30px;
     width: 30px;
     color: orange;
+    display: inline-block;  /* Faz com que fiquem alinhados horizontalmente */
+    margin-right: 8px;  /* Espaçamento entre os ícones */
 }
 
-.telefone123{
+/* Texto para contato */
+.telefone123,
+.email123,
+.endereco123 {
     color: blue;
 }
 
-.email123{
-    color: blue;
-}
-
-.endereco123{
-    color: blue;
-}
-
-.contato {
-    color: orange;
-}
-
+/* Elemento de Contato */
+.contato,
 .telefone10 {
     color: orange;
+    font-size: 16px;
+    display: inline-block;  /* Deixa o texto ao lado dos ícones */
+    margin-left: 8px;  /* Espaçamento entre ícone e texto */
 }
 
-.map-container {
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
-}
+/* Responsividade para os ícones e contato */
+@media (max-width: 768px) {
 
-.map-container iframe {
-  width: 100%;
-  height: 400px;
-  border: 0;
-}
+  /* Para telas pequenas, os ícones e texto de contato devem se ajustar */
+  .telefone,
+  .email,
+  .endereco {
+    height: 25px;
+    width: 25px;
+  }
 
-.rodape {
-    background-color: blue;
-    color: white;
+  .contato,
+  .telefone10 {
+    font-size: 14px;
+  }
+
+  /* Ajuste do Mapa */
+  .map-container {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 250px; /* Ajusta a altura para telas menores */
+  }
+
+  /* Rodapé */
+  .rodape {
+    font-size: 16px;
+    padding: 20px 10px;
+  }
+
+  /* Ajuste para centralizar os ícones e texto */
+  .contato {
+    display: block;
     text-align: center;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+  }
+  
+  /* Ajuste de largura dos ícones para facilitar a visualização */
+  .telefone,
+  .email,
+  .endereco {
+    margin-right: 5px;
+  }
 }
+
+@media (max-width: 480px) {
+  /* Para telas extremamente pequenas (celulares em modo retrato) */
+  
+  /* Reduz o tamanho dos ícones ainda mais */
+  .telefone,
+  .email,
+  .endereco {
+    height: 20px;
+    width: 20px;
+  }
+
+  .contato,
+  .telefone10 {
+    font-size: 12px;
+  }
+
+  .rodape {
+    font-size: 14px;
+    padding: 15px 5px;
+  }
+
+  /* Ajusta o mapa */
+  .map-container iframe {
+    height: 200px; /* Ajusta a altura do mapa */
+  }
+}
+
